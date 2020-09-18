@@ -1,15 +1,17 @@
-output: main.o
-	gcc main.o -o main
+#OBJECTS=main.o
+#OBJECTS=pthread101.o
 
-main.o: main.c
-	gcc  main.c -lpthread
+CC 		= gcc
+CFLAGS 		= -Wall
+LDFLAGS		= -lpthread	
+OBJFILES	= pthread101.o main.o
+TARGET 		= main
 
-pthread101.o: pthread101.c
-	gcc pthread101.c -lpthread
+all: $(TARGET)
+
+$(TARGET): $(OBJFILES)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
 
 clean:
-	rm *.o main
-
-# gcc pthread101.c main.c -o main -pthread
-
+	rm -f $(OBJFILES) $(TARGET) *~
 
