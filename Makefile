@@ -1,6 +1,3 @@
-#OBJECTS=main.o
-#OBJECTS=pthread101.o
-
 CC 		= gcc
 CFLAGS 		= -Wall
 LDFLAGS		= -lpthread	
