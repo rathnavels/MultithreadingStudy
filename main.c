@@ -6,9 +6,10 @@
 #include <unistd.h>
 
 void runPthread101();
+void runPthread102();
 int main()
 {
-	runPthread101();
+	runPthread102();
 	return 0;
 
 }

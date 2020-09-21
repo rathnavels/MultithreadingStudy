@@ -1,7 +1,7 @@
 CC 		= gcc
 CFLAGS 		= -Wall
 LDFLAGS		= -lpthread	
-OBJFILES	= pthread101.o main.o
+OBJFILES	= main.o pthread101.o pthread102.o
 TARGET 		= main
 
 all: $(TARGET)
