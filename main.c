@@ -7,9 +7,10 @@
 
 void runPthread101();
 void runPthread102();
+void runPthread103();
 int main()
 {
-	runPthread102();
+	runPthread103();
 	return 0;
 
 }
