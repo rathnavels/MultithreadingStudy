@@ -53,3 +53,7 @@ Mkfile.old
 dkms.conf
 
 .swp
+
+!*.c
+!Makefile
+!*.md
