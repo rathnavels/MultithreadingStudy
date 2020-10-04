@@ -8,9 +8,10 @@
 void runPthread101();
 void runPthread102();
 void runPthread103();
+void runEg01();
 int main()
 {
-	runPthread103();
+	runEg01();
 	return 0;
 
 }
